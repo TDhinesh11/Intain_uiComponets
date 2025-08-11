@@ -1,0 +1,8 @@
+src/
+webpack.config.js
+webpack.dev.js
+*.md
+.git/
+node_modules/
+.DS_Store
+*.log 

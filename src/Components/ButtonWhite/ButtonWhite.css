@@ -1,0 +1,96 @@
+.button_white{
+    width: 110px;
+    min-width: 110px;
+    padding: 9px 20px;
+    border-radius: 20px;
+    border: 1.2px solid var(--Search-border);
+    background: var(--button-white);
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    transition: background 0.5s ease;
+}
+.white_button_main{
+    border: none;
+    background-color: transparent;
+    color: var(--text-color);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer; /* Optional: makes the button more user-friendly */
+    transition: color 0.5s ease;
+}
+.white_button_main:disabled{
+    cursor: not-allowed;
+    color: #616161 !important;
+}
+.white_button_main.highlight {
+    border-top: 3px solid #018E82; /* This matches the highlight color */
+    border-radius: 30px;
+}
+
+/* test */
+.button_white:has(.white_button_main:not(:disabled)):hover {
+    background: var(--popover-arrow);
+}
+
+.button_white:has(.white_button_main:not(:disabled)):hover .white_button_main {
+    color: var(--button-white);
+}
+
+.button_white:has(.white_button_main:disabled) {
+    opacity: 0.5;
+}
+
+.white_button_main:not(:disabled):active:focus-within {
+    text-decoration: underline;
+}
+
+/* disable test */
+.white_button_main:disabled{
+    color: #212121;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.button_white:hover:has(.white_button_main:disabled) {
+    background: var(--button-white); /* Keep original background */
+}
+
+.button_white:has(.white_button_main:disabled):hover .white_button_main {
+    /* color: #FFC000; */
+    opacity: 0.5;
+}
+
+/* borderless */
+.button_white_borderless{
+    width: 110px;
+    min-width: fit-content;
+    padding: 9px 20px;
+    border-radius: 20px;
+    border: none;
+    background: var(--button-white);
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    transition: background 0.5s ease;
+}
+.white_button_borderless_main{
+    border: none;
+    background-color: transparent;
+    color: var(--text-color);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer; /* Optional: makes the button more user-friendly */
+    transition: color 0.5s ease;
+}
+.button_white_borderless:has(.white_button_borderless_main:not(:disabled)):active:focus-within {
+    text-decoration: underline;
+}

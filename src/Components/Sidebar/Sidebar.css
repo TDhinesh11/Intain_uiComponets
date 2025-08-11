@@ -1,0 +1,373 @@
+.sidebar {
+    width: 60px;
+    height: 100vh;
+    background-color: var(--sidebar);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: width 0.3s ease;
+    z-index: 1001;
+    float: left;
+    font-family: Mulish;
+}
+
+.sidebar ul li a img {
+    display: inline-block;
+    max-width: 24px;
+    vertical-align: middle;
+}
+
+.sidebar:hover {
+    width: 220px;
+}
+
+.sidebar:hover .issure-icon-active {
+    width: 185px !important;
+}
+
+.sidebar:hover .sidebar-item-content {
+    width: 185px !important;
+}
+
+.sidebar-icons {
+    padding: 15px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.powered-by-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40px;
+    transition: width 0.3s ease;
+}
+.powered-by-hr{
+    width: 80px; 
+    height: 1px; 
+    color: #FFFFFF; 
+    margin: 10px 0 10px 0; 
+    padding: 0; 
+    position: relative; 
+    left: -10px;
+    transition: width 0.3s ease;
+}
+.sidebar:hover .powered-by-hr{
+    width: 400px;
+}
+
+.sidebar-logo {
+    position: relative;
+    margin-bottom: 34px;
+}
+.powerBy-sidebar-logo{
+    position: relative;
+    margin-bottom: 10px;
+}
+.sidebar:hover .powerBy-sidebar-logo{
+    left: 87px;
+}
+
+.issure-icon, .issure-icon:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.issure-icon{
+    opacity: .5;
+    gap: 8px;
+}
+.issure-icons {
+    margin: 7px 5px;
+    background-color: initial;
+    margin: 7px 5px;
+    background-color: initial;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin: 0;
+}
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 7px;
+    color: var(--sidebar-span-text);
+    text-decoration: none;
+    /* width: 185px; */
+    transition: width 0.3s;
+}
+    
+.sidebar-item img {
+    width: 24px;
+    height: 24px;
+}
+.dialogLogo {
+  background-color: #018E82;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-weight: bolder;
+  stroke-width: 1px;
+  stroke: rgba(1, 142, 130, 0.20);
+}
+
+.sidebar-item-label {
+    display: none;
+    margin-left: 15px;
+    color: white;
+    font-size: 14px;
+}
+
+.sidebar:hover .sidebar-item-label {
+    display: inline-block;
+}
+
+.sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.sidebar-item-profile {
+    background-color: var(--sidebar-profile-bg);
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50px;
+    color: #004d40;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+a{
+    text-decoration: none !important;
+}
+
+.issure-icon-active, .issure-icon-active:hover {
+    background-color: #1a534e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.issure-icon-active {
+    width: 44px;
+    height: 44px;
+    opacity: 1;
+    grid-gap: 8px;
+    gap: 8px;
+    transition: width 0.2s ease-out;
+}
+.issure-icon-active span{
+  color: var(--sidebar-active-text) !important;
+}
+/* Add hover effects for smooth transitions */
+.sidebar-item:hover, .issure-icons:hover {
+    background-color: #1a534e;
+}
+.issure-icons:hover{
+  opacity: 0.5;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.notificationcolor {
+    font-size: 24px;
+    color: #ccc;
+}
+
+.sidebar-icons ul {
+    list-style-type: none !important;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none !important;
+}
+
+.sidebar-icons li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Ensures text is aligned with icons */
+        /* margin-bottom: 20px; */
+        /* Adds space between each icon-item */
+        list-style-type: none !important;
+}
+
+.sidebar-icons img {
+    width: 40px;
+    /* height: 30px; */
+    /* Adds spacing between the icon and text */
+}
+
+.sidebar-icons span {
+    font-size: 14px;
+    color: var(--sidebar-span-text);
+    /* Adjust this based on the sidebar color scheme */
+}
+
+.logo-intain-hidden, .powerBy-logo{
+    display: none;
+    /* Hide IntainLogo by default */
+}
+
+/* Show IntainLogo on sidebar hover */
+.sidebar:hover .logo-intain-hidden {
+    display: block;
+    width: 88px;
+    height: 44px;
+    /* Show IntainLogo when sidebar is hovered */
+}
+.sidebar:hover .powerBy-logo{
+    display: flex;
+    width: 200px;
+    height: 44px;
+    align-items: baseline;
+    gap: 5px;
+    /* Show IntainLogo when sidebar is hovered */
+}
+.powerBy-logo p{
+    color: #809F9C;
+    text-align: right;
+    font-family: Mulish;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.sidebar:hover .logo-intain {
+    display: none;
+    /* Hide Intan_AI when sidebar is hovered */
+}
+
+.sidebar-item-content {
+    opacity: 0.5;
+    display: flex;
+    gap: 8px;
+}
+
+.sidebar-item:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 8px 7px;
+    /* width: 185px !important; */
+}
+
+/* Show Content on sidebar hover */
+.content-show {
+    display: none;
+    /* Hide IntainLogo by default */
+}
+
+.sidebar:hover .content-show {
+    display: block;
+    /* width: 110px; */
+    width: 132px;
+    text-align: justify;
+    /* Show Content when sidebar is hovered */
+}
+
+.custom-popover .ant-popover-inner {
+    border-radius: 8px;
+    border: 1px solid var(--text-color);
+    background: var(--background-color);
+    padding: 0;
+  }
+.ant-popover .ant-popover-content{
+  min-width: 235px;
+  border-radius: 8px;
+  border: 1px solid var(--text-color);
+  background: var(--background-color);
+}
+  
+  .ant-popover-arrow::after{
+    border: 1px solid var(--popover-arrow);
+  }
+
+  .custom-popover-profile .ant-popover-inner {
+    border-radius: 8px;
+    border: 1px solid var(--text-color);
+    background: var(--background-color);
+  }
+  .ant-popover .ant-popover-inner{
+    background: var(--background-color);
+  }
+
+.dialogProfileName{
+  color: var(--dialog-profile-name);
+  font-family: Mulish;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.dialogProfileNameP{
+  color: var(--dialog-profile);
+  font-family: Mulish;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+}
+.dialogProfileEmail {
+  color: var(--text-color);
+  font-family: Mulish;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+p.logout_nav {
+  color: var(--dialog-profile);
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.theme-switch-container{
+    width: 125px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+.theme-switch-container > label{
+    font-family: var(--mulish-font);
+    color: var(--text-color);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* popover */
+.ant-popover-arrow{
+    left: 1px !important;
+}   
+.ant-popover .ant-popover-arrow:before{
+    background-color: var(--background-color) !important;
+}
+/* popover bg blur */
+.blur-background {
+    filter: blur(2px);
+    transition: filter 0.3s ease-in-out;
+    pointer-events: none;
+    z-index: -1;
+}

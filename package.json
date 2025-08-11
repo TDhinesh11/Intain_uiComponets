@@ -1,0 +1,42 @@
+{
+  "name": "@intain_tech/component",
+  "version": "1.0.30",
+  "main": "dist/main.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "description": "A collection of reusable React components for building modern user interfaces",
+  "author": "Dhinesh",
+  "license": "ISC",
+  "scripts": {
+    "build": "webpack",
+    "prepublishOnly": "npm run build",
+    "dev": "webpack serve --config webpack.dev.js"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.2.0",
+    "@mui/icons-material": "^7.2.0",
+    "antd": "^5.26.5",
+    "bootstrap": "^5.3.7",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.3",
+    "react-window": "^1.8.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.100.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  }
+}

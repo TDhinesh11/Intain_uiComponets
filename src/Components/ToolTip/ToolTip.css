@@ -1,0 +1,12 @@
+.ant-tooltip .ant-tooltip-inner {
+    background-color: var(--tooltip-bg) !important;
+    color: var(--background-color) !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+    font-family: Mulish !important;
+    border-radius: 7px !important;
+}
+.ant-tooltip{
+    --antd-arrow-background-color: var(--tooltip-bg) !important;
+}

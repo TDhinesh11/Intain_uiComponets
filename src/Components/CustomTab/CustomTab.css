@@ -1,0 +1,39 @@
+.MuiTab-root{
+    color: var(--text-color) !important;
+    font-family: Mulish !important;
+    font-size: 15px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important ;
+    text-transform: none !important;
+    padding: 8px 0px 8px 0 !important;
+    justify-content: end !important;
+    min-height: 46px !important;
+}
+
+.Mui-selected{
+    color: var(--dialog-profile) !important;
+    font-weight: 600 !important;
+}
+
+.MuiTab-root:hover:not(.Mui-selected) {
+    text-decoration: underline;
+}
+
+.MuiTabs-scrollButtons{
+    color: var(--dialog-profile) !important;
+}
+.Mui-disabled{
+    opacity: 0.3 !important;
+}
+.MuiTabScrollButton-root{
+    width: 20px !important;
+    height: 38px !important;
+    top: 10px !important;
+}
+.MuiTab-root{
+    align-items: baseline !important;
+}
+.MuiTabs-scrollButtons .MuiTouchRipple-root {
+    display: none !important;
+}

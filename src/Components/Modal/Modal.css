@@ -1,0 +1,25 @@
+.ant-modal-content{
+    border: 1px solid var(--Search-border) !important;
+    background-color: var(--background-color) !important;
+}
+.ant-modal-header{
+    margin-right: 10px !important;
+    background-color: var(--background-color) !important;
+}
+.ant-modal-title{
+    font-size: 24px !important;
+    font-family: Catamaran !important;
+    color: var(--text-color) !important;
+}
+.delete-modal .ant-modal-title{
+    font-size: 20px !important;
+}
+.ant-modal-footer{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 38px !important;
+}
+.ant-modal-close:hover{
+    background-color: transparent !important;
+}

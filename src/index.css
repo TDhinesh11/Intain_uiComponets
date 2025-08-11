@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600&display=swap");
+
+/* body{
+  background-color: var(--background-color) !important;
+  margin: 0;
+  padding: 0;
+  font-family: var(--mulish-font) !important;
+} */
+
+input:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+:root {
+    /* use this for white bg*/
+    --background-color: #fff;
+    --mulish-font: Mulish;
+    --catamaran-font: Catamaran;
+    --text-color: #212121;
+    --yellow-btn: #ffc000;
+    --table-header-color: rgba(1, 142, 130, 0.1);
+    --body-box-background: #fff;
+    --body-box-border: #212121;
+    --sidebar: #004d40;
+    --dialog-profile-name: #212121;
+    --dialog-profile: #018e82;
+    --Search-border: #212121;
+    --table-even-row: #fafafa;
+    --table-body-text:#212121;
+    --button-white : #FFF;
+    --select-arrow: #018e82;
+    --date-range: #e6f4ff;
+    --sidebar-span-text: #FFFFFF;
+    --sidebar-active-text: #FFFFFF;
+    --sidebar-profile-bg: #e2ebea;
+    --popover-arrow: #212121;
+    --add-docs-column: rgba(1, 142, 130, 1);
+    --tooltip-bg: #322F35;
+    --tooltip-text: #F5EFF7;
+    --hr-bg: rgba(33, 33, 33, 0.38);
+    --thumbnail-active-border: #212121;
+    --thumbnail-inactive-border: #018E82;
+    --tabel-header: #e6f4f3;
+    --text-color-popper: rgba(255, 255, 255, 0.87);
+    --doc-misclassification1: #01949A;
+    --doc-misclassification2: #E1C340;
+    --doc-misclassification3: #DB1F48;
+    --doc-misclassification4: #18A558;
+    --doc-misclassification5: #145DA0;
+    --doc-misclassification6: #C197D2;
+    --doc-misclassification7: #8E010D;
+    --doc-misclassification8: #05445E;
+    --doc-misclassification9: #E57F84;
+    --doc-misclassification10: #613659;
+    --doc-misclassification10: #116530;
+    --error-border: #DA4444;
+  }
+  
+  [dark-theme="dark"] {
+    --background-color: #121212;
+    --text-color: rgba(255, 255, 255, 0.87);
+    --body-box-background: #1f292e;
+    --body-box-border: #324b57;
+    --sidebar: #27333a;
+    --dialog-profile-name: rgba(255, 255, 255, 0.87);
+    --dialog-profile: rgba(3, 218, 198, 0.87);
+    --Search-border: rgba(255, 255, 255, 0.38);
+    --table-even-row: #27333a;
+    --table-body-text:rgba(255, 255, 255, 0.60);
+    --button-white : #121212;
+    --select-arrow: #03DAC6;
+    --date-range: #03DAC6;
+    --sidebar-span-text: rgba(122, 176, 201, 1);
+    --sidebar-active-text: #3ED0A4;
+    --sidebar-profile-bg: #7AB0C9;
+    --popover-arrow: #FFF;
+    --add-docs-column: rgb(6, 248, 227);
+    --tooltip-bg: #E6E0E9;
+    --tooltip-text: #322F35;
+    --hr-bg: rgba(255, 255, 255, 0.38);
+    --thumbnail-active-border: #fff;
+    --thumbnail-inactive-border: #35f2e2;
+    --tabel-header: #1C3336;
+    --text-color-popper: #212121;
+    --doc-misclassification1: #A4E8E0;
+    --doc-misclassification2: #F8EA8C;
+    --doc-misclassification3: #DB1F48;
+    --doc-misclassification4: #A3EBB1;
+    --doc-misclassification5: #D4F1F4;
+    --doc-misclassification6: #C197D2;
+    --doc-misclassification7: #D3B1C2;
+    --doc-misclassification8: #6AABD2;
+    --doc-misclassification9: #E57F84;
+    --doc-misclassification10: #E5DDC8;
+    --doc-misclassification10: #4CD7D0;
+    --error-border: #DA4444;
+  }

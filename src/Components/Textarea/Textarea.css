@@ -1,0 +1,19 @@
+.compTextarea {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    border: 1px solid #707070;
+    padding: 0.5em 1em;
+    color: var(--text-color);
+    margin-bottom: 5px;
+    min-height: 100px;
+    max-height: 400px;
+    height: auto;
+    width: 100%;
+    overflow: auto;
+    font-size: 14px;
+}
+
+.compTextarea:focus {
+    outline: none;
+    border: 1px solid var(--dialog-profile);
+}

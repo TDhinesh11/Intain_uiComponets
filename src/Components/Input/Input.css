@@ -1,0 +1,56 @@
+.compInput{
+    color: var(--text-color);
+    font-family: Mulish;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+.compInput{
+    width: 100%;
+    background-color: var(--background-color) !important;
+    color: var(--text-color);
+    height: 38px !important;
+    border-radius: 8px;
+    /* padding: 0.5em 2.7em 0.5em 1em; */
+    border: 1px solid var(--Search-border);
+}
+.compInput:not(.error):focus-visible{
+    outline: none;
+    border: 1px solid var(--dialog-profile);
+}
+.disabled{
+    opacity: 0.5 !important;
+    background-color: var(--background-color) !important;
+}
+.error{
+    border: 1px solid var(--error-border) !important;
+}
+.ant-input-outlined:not(.disabled):hover{
+    border: 1px solid var(--Search-border) !important;
+    background-color: var(--table-even-row) !important;
+}
+.ant-input-outlined:not(.disabled):focus{
+    border: 1px solid var(--dialog-profile) !important;
+    box-shadow: none !important;
+}
+.ant-input-outlined:focus-within{
+    border: 1px solid var(--dialog-profile) !important;
+    box-shadow: none !important;
+}
+.ant-input-outlined:is(.error):hover{
+    border: 1px solid var(--error-border) !important;
+    background-color: #FAFAFA !important;
+}
+.ant-input-outlined:is(.error):focus{
+    border: 1px solid var(--dialog-profile) !important;
+    box-shadow: none !important;
+}
+.ant-input::placeholder {
+    color: var(--text-color); /* your desired color */
+    opacity: 1;  /* make sure it's fully visible */
+}
+.ant-input-affix-wrapper >input.ant-input{
+    height: 100%;
+}
